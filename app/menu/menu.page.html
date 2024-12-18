@@ -1,0 +1,30 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>¡Bienvenido {{ username }}!</ion-title>
+    <ion-buttons slot="end">
+      <ion-button (click)="presentPopover($event)">
+        <ion-icon name="person-circle-outline"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="menu-container">
+    <div class="welcome-text">
+      <h2>¿Qué desea hacer en esta ocasión?</h2>
+    </div>
+
+    <div class="options-container">
+      <ion-button expand="block" [routerLink]="registrarRuta">
+        <ion-icon name="qr-code-outline" slot="start"></ion-icon>
+        Registrar asistencia
+      </ion-button>
+
+      <ion-button expand="block" routerLink="/menu">
+        <ion-icon name="document-text-outline" slot="start"></ion-icon>
+        Ver asistencia
+      </ion-button>
+    </div>
+  </div>
+</ion-content>
