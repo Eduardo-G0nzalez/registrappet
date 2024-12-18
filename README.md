@@ -14,8 +14,8 @@ Todos fueron corregidos, el único error es porque en este proyecto no ocupo la 
 3. Instalación
   - Descargar la carpeta comprimida, crear un proyecto ionic en blanco y reemplazar los archivos de la carpeta src con los de la carpeta del repositorio. Luego instala las dependencias
 ```bash
-git clone prueba3AppsM
+git clone registrappet
 npm install
-npm install @capacitor/camera
+npm install html5-qrcode --legacy-peer-deps
 npm install @angular/material --legacy-peer-deps
 npm install @angular/cdk --legacy-peer-deps
